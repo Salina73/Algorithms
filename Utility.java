@@ -148,15 +148,18 @@ public final class Utility {
 	public static void VM(int a, int i) {
 		int sum;
 		int[] c= {1000,500,100,50,10,5,2,1};
-	
+		if(a==0)
+			System.out.println("notes are 0");
+		else
+		{
 		sum=a/c[i];
 		a=a%c[i];
-		
 		System.out.println(c[i]+"notes are :"+sum);
         i++;
 		VM(a,i);
-
+		
+		}
+		
 	}
 
 }
-
